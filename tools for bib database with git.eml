@@ -1,0 +1,133 @@
+Delivered-To: sebastien.schiesser@gmail.com
+Received: by 10.27.7.2 with SMTP id 2csp905780wlh;
+        Fri, 10 Apr 2015 01:33:29 -0700 (PDT)
+X-Received: by 10.194.24.103 with SMTP id t7mr893462wjf.15.1428654809200;
+        Fri, 10 Apr 2015 01:33:29 -0700 (PDT)
+Return-Path: <jan.schacher@zhdk.ch>
+Received: from smtpa.epfl.ch (smtpa.epfl.ch. [2001:620:618:16d:1:80b2:6db1:1])
+        by mx.google.com with ESMTPS id r6si2025001wjx.75.2015.04.10.01.33.28
+        for <sebastien.schiesser@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 10 Apr 2015 01:33:29 -0700 (PDT)
+Received-SPF: none (google.com: jan.schacher@zhdk.ch does not designate permitted sender hosts) client-ip=2001:620:618:16d:1:80b2:6db1:1;
+Authentication-Results: mx.google.com;
+       spf=none (google.com: jan.schacher@zhdk.ch does not designate permitted sender hosts) smtp.mail=jan.schacher@zhdk.ch
+Received: (qmail 32671 invoked by alias); 10 Apr 2015 08:33:28 -0000
+Delivered-To: sebastien.schiesser@a3.epfl.ch
+Received: (qmail 32661 invoked by uid 107); 10 Apr 2015 08:33:28 -0000
+X-Virus-Scanned: ClamAV
+Received: from mailcleaner0.epfl.ch (HELO epfl.ch) (2001:620:618:132:1:80b2:329d:1)
+  by smtpa.epfl.ch (AngelmatoPhylax SMTP proxy) with ESMTP; Fri, 10 Apr 2015 10:33:28 +0200
+Received: by localhost stage2 with id 1YgUNP-000FrE-Of 
+	for <sebastien.schiesser@a3.epfl.ch>; Fri, 10 Apr 2015 10:33:23 +0200
+Received: from relay01.zhdk.ch ([195.176.247.155])
+	by epfl.ch stage1 with esmtps 
+	(Exim MailCleaner) 
+	id 1YgUNP-000FrA-NJ 
+	for <sebastien.schiesser@a3.epfl.ch> 
+	from <jan.schacher@zhdk.ch>; Fri, 10 Apr 2015 10:33:23 +0200
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by relay01.zhdk.ch (Postfix) with ESMTP id 6FDFEBFE9F;
+	Fri, 10 Apr 2015 10:33:23 +0200 (CEST)
+X-MailCleaner-SPF: none
+X-Virus-Scanned: Debian amavisd-new at relay01.zhdk.ch
+Received: from relay01.zhdk.ch ([127.0.0.1])
+	by localhost (relay01.zhdk.ch [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id L7elVhOTjjXr; Fri, 10 Apr 2015 10:33:22 +0200 (CEST)
+Received: from darkmatter.home (118.237.61.188.dynamic.wline.res.cust.swisscom.ch [188.61.237.118])
+	(using TLSv1 with cipher ECDHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by relay01.zhdk.ch (Postfix) with ESMTPSA id 25B65BFE72;
+	Fri, 10 Apr 2015 10:33:20 +0200 (CEST)
+From: Jan Schacher <jan.schacher@zhdk.ch>
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+Subject: tools for bib database with git
+Message-Id: <984D4164-A24E-463C-9194-1E7658461D17@zhdk.ch>
+Date: Fri, 10 Apr 2015 10:33:20 +0200
+To: Patrick Neff <patrick.neff@uzh.ch>,
+ =?windows-1252?Q?Hanna_J=E4rvel=E4inen?= <hanna.jarvelainen@zhdk.ch>,
+ Stefano Papetti <stefano.papetti@univr.it>,
+ Jan Schacher <jan.schacher@student.ua.ac.be>,
+ Daniel Bisig <dbisig@ifi.unizh.ch>,
+ Philippe Kocher <mail@philippekocher.ch>,
+ =?windows-1252?Q?Germ=E1n_Toro-P=E9rez?= <german.toro-perez@zhdk.ch>,
+ Marcus Maeder <marcus.maeder@zhdk.ch>,
+ Martin Neukom <mneukom@swissonline.ch>,
+ Lucas Bennett <lucas.bennett@zhdk.ch>,
+ =?windows-1252?Q?S=E9bastien_Schiesser?= <sebastien.schiesser@a3.epfl.ch>
+Mime-Version: 1.0 (Mac OS X Mail 6.6 \(1510\))
+X-Mailer: Apple Mail (2.1510)
+X-NiceBayes: is not spam (3.59%)
+X-Spamc: is not spam (score=0.8, required=5.0)
+X-MailCleaner-Information: Please contact postmaster@epfl.ch for more information
+X-MailCleaner-ID: 1YgUNP-000FrE-Of
+X-MailCleaner: Found to be clean
+X-MailCleaner-SpamCheck: not spam, Spamc (score=0.8, required=5.0,
+	BAYES_50 0.8)
+X-MailCleaner-ReportURL: http://mailcleaner.epfl.ch/rs.php
+
+hi researchers
+
+Do you have any tips on using, managing a .bib bibliography database =
+with options for versioning, writing in latex, and exporting to MSWord, =
+or OpenOffice?
+
+My ideal workflow would be a git versioning, using one central database =
+file and subversioning for indiviual papers, (hence the wish to export =
+to word, as this is still being asked occasionally).
+
+I don't want a cloud solution with browser integration such as Mendeley, =
+Zotero, Citavi or Endnote or, or or
+
+
+some of the tools I use
+
+http://www.sourcetreeapp.com/
+
+http://bibdesk.sourceforge.net/
+
+
+a nice writeup for git-versioning a bibliography database
+
+http://andrius.velykis.lt/2012/06/master-bibtex-file-git-submodules/
+
+
+searching here=85
+
+http://alternativeto.net/software/bibdesk/
+
+
+thans for any ideas hints etc.
+
+gruss
+
+j
+
+
+
+
+-
+-
+Zurich University of the Arts
+Department of Music
+Institute for Computer Music and Sound Technology
+-
+-
+Jan Schacher
+Associate Researcher
+-
+Principal Investigator
+Swiss National Science Foundation
+-
+-
+Pfingstweidstrasse 96, P.O. Box,=20
+CH-8031 Zurich, Switzerland=20
+-
+-
+www.zhdk.ch
+www.icst.net
+
+
+
+
